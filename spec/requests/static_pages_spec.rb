@@ -4,6 +4,7 @@ describe "Static pages" do
 
   subject { page }
 
+
   describe "Home page" do
     before { visit root_path }
 
@@ -32,6 +33,5 @@ describe "Static pages" do
     it { should have_content('Contact') }
     it { should have_title(full_title('Contact')) }
   end
-
 
 end
